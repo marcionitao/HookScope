@@ -61,9 +61,13 @@ This project is a monorepo using npm workspaces.
 - **Framework:** [Fastify](https://www.fastify.io/)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
 - **Database:** [PostgreSQL](https://www.postgresql.org/)
+- **Database Driver:** [pg](https://node-postgres.com/) - Non-blocking PostgreSQL client for Node.js.
 - **ORM:** [Drizzle ORM](https://orm.drizzle.team/)
 - **Schema Validation:** [Zod](https://zod.dev/)
-- **API Documentation:** [Scalar](https://github.com/scalar/scalar)
+- **API Documentation:**
+  - [Scalar](https://github.com/scalar/scalar) - Beautiful, customizable, and feature-rich API references.
+  - [@fastify/swagger](https://github.com/fastify/fastify-swagger) - Swagger documentation generator for Fastify.
+- **CORS:** [@fastify/cors](https://github.com/fastify/fastify-cors) - Enables Cross-Origin Resource Sharing (CORS) in Fastify.
 - **UUID Generation:** [uuidv7](https://github.com/LiosK/uuidv7) - Fast, sortable, and spec-compliant UUIDv7 generation.
 - **Drizzle Zod Schemas:** [drizzle-zod](https://github.com/drizzle-team/drizzle-orm/tree/main/drizzle-zod) - Generate Zod schemas from Drizzle ORM schemas.
 - **Fastify Zod Provider:** [fastify-type-provider-zod](https://github.com/turkerdev/fastify-type-provider-zod) - Type provider for Fastify that uses Zod for validation.
@@ -78,7 +82,7 @@ This project is a monorepo using npm workspaces.
 - **UI Components:** [Radix UI](https://www.radix-ui.com/)
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Layout:** [react-resizable-panels](https://github.com/bvaughn/react-resizable-panels)
-- **Syntax Highlighting:** [Shiki](https://shiki.matsu.io/)
+- **Syntax Highlighting:** [Shiki](https://shiki.matsu.io/) - Code Block Syntax Highlighting.
 - **Tailwind Merge:** [tailwind-merge](https://github.com/dcastil/tailwind-merge) - Utility to merge Tailwind CSS classes without style conflicts.
 - **Tailwind Variants:** [tailwind-variants](https://www.tailwind-variants.org/) - Create variants for Tailwind CSS classes.
 - **TanStack Router Devtools:** [@tanstack/react-router-devtools](https://tanstack.com/router/v1/docs/devtools) - Devtools for TanStack Router.
