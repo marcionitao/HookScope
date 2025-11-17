@@ -34,9 +34,12 @@ export function CodeBlock({
 				className,
 			)}
 			{...props}
-		> 
-      {/** biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
-      <div className='[&_pre]:p-4 [&_pre]:text-sm [&_pre]:font-mono [&_pre]:leading-relaxed' dangerouslySetInnerHTML={{ __html: parseCode }}/>
+		>
+			{/** biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
+			<div
+				className="[&_pre]:p-4 [&_pre]:text-sm [&_pre]:font-mono [&_pre]:leading-relaxed"
+				dangerouslySetInnerHTML={{ __html: parseCode }}
+			/>
 		</div>
 	)
 }

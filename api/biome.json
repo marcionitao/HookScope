@@ -20,7 +20,7 @@
 			"recommended": true
 		}
 	},
-		"css": {
+	"css": {
 		"parser": {
 			"tailwindDirectives": true
 		},

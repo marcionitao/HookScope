@@ -1,9 +1,9 @@
-import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
+import { lt } from 'drizzle-orm'
 import { createSelectSchema } from 'drizzle-zod'
+import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { z } from 'zod'
-import { webhooks } from '@/db/schema'
 import { db } from '@/db'
-import { lt } from 'drizzle-orm';
+import { webhooks } from '@/db/schema'
 
 // usando uma const, é a unica forma de conseguir tipar a função
 export const listWebhokks: FastifyPluginAsyncZod = async (app) => {
@@ -27,8 +27,8 @@ export const listWebhokks: FastifyPluginAsyncZod = async (app) => {
 								id: true,
 								method: true,
 								pathname: true,
-								createdAt: true
-							})
+								createdAt: true,
+							}),
 						),
 						nextCursor: z.string().nullable(),
 					}),

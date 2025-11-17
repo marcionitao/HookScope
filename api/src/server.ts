@@ -9,9 +9,10 @@ import {
 	type ZodTypeProvider,
 } from 'fastify-type-provider-zod'
 import { env } from './env'
-import { listWebhokks } from './routers/list-webhooks'
-import { getWebhokks } from './routers/get-webhooks'
 import { deleteWebhokks } from './routers/delete-webhooks'
+import { getWebhokks } from './routers/get-webhooks'
+import { listWebhokks } from './routers/list-webhooks'
+import { captureWebhokks } from './routers/capture-webhooks'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -46,6 +47,7 @@ app.register(ScalarApiReference, {
 app.register(listWebhokks)
 app.register(getWebhokks)
 app.register(deleteWebhokks)
+app.register(captureWebhokks)
 
 // start server)
 
